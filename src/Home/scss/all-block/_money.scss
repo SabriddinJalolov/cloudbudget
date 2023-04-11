@@ -1,0 +1,42 @@
+.moneyal{
+    background: #ED4C5C;
+}
+.money{
+    &__main{     
+        color: #fff;
+
+        &--title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+        }
+        &--text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            padding-top: 24px;
+            padding-bottom: 40px;
+            padding-right: 30px;
+        }
+        &--social{
+            display: flex;
+            gap: 5px;
+            & img:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .money{
+        &__main{
+            &--text{
+                padding-right: 0;
+            }
+        }
+    }
+
+}
